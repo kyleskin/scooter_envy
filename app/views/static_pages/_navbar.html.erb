@@ -1,0 +1,10 @@
+<div>
+  <ul class="navbar animated fadeInRight fadeIn">
+    <% home = image_tag('scooter_only.png', id:'scooter_only') %>
+    <%= link_to home, root_path %>
+    <li class="nav_links <%= 'active' if current_page?(about_path)%>"><%= link_to 'About', about_path %></li>
+    <li class="nav_links <%= 'active' if current_page?(services_path)%>"><%= link_to 'Services', services_path %></li>
+    <li class="nav_links <%= 'active' if current_page?(portfolio_path)%>"><%= link_to 'Portfolio', portfolio_path %></li>
+    <li class="nav_links <%= 'active' if current_page?(contact_path)%>"><%= link_to 'Contact', contact_path %></li>
+  </ul>
+</div>

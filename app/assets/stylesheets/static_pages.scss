@@ -1,0 +1,192 @@
+.header {
+  div#homepage_navbar {
+    text-decoration: none;
+    margin-top: 45px;
+    padding-bottom: 90px;
+    border-bottom: solid #999 2px;
+    color: #2A2B2A;
+    -webkit-animation-delay: .75s;
+    #homepage_left_links {
+      float: left;
+      list-style: none;
+      li {
+        display: inline;
+        font-size: 18pt;
+        margin-left: 75px;
+      }
+    }
+    #homepage_right_links {
+      float: right;
+      display: inline;
+      list-style: none;
+      li {
+        margin-right: 75px;
+
+      }
+    }
+  }
+  .logo-homepage {
+    width: 400px;
+    border-radius: 200px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.75);
+    position: relative;
+    margin-top: -6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation-duration: 2.5s;
+  }
+}
+.homepage_text {
+  font-size: 25pt;
+  color: #27B899;
+  margin-top: 4rem;
+  -webkit-animation-delay: 1s;
+}
+
+// ABOUT PAGE
+
+.navbar {
+  padding: .75rem 5rem;
+  #scooter_only {
+    width: 100px;
+  }
+  .nav_links {
+    margin-left: 7rem;
+  }
+}
+.green_ribbon {
+  width: 100%;
+  background-color: #27B899;
+  color: white;
+  padding: .5rem 0;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+  -webkit-animation-delay: .5s;
+  -webkit-animate-duration: 1s;
+}
+.two_column_wrapper {
+  position: absolute;
+  margin: 2rem auto;
+  -webkit-animation-delay: .75s;
+  p {
+    // border: solid pink 1px;
+    display: inline;
+    float: left;
+    max-width: 33%;
+    margin-left: 11%;
+    line-height: 1.5;
+    letter-spacing: .07em;
+    color: #999;
+  }
+}
+
+// CONTACT PAGE
+#contact_form {
+  margin-top: 2rem;
+  margin-left: 33%;
+  -webkit-animation-delay: .8s;
+  -webkit-animation-duration: 1s;
+  h4 {
+    margin-bottom: .5rem;
+  }
+  input, textarea {
+    width: 50%;
+    border: solid #27B899 3px;
+    padding: .5rem;
+    margin-bottom: -.5rem;
+  }
+  textarea {
+    padding-bottom: 3rem;
+  }
+  #send_button {
+    background: none;
+    width: 8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  #send_button:hover {
+    background: #27B899;
+    color: white;
+  }
+  input:focus {
+    border: solid #27B899 5px;
+    outline: none;
+  }
+  textarea:focus {
+    border: solid #27B899 5px;
+    outline: none;
+  }
+  #send_button:focus {
+    background-color: #27B899;
+    color: white;
+  }
+}
+
+// SERVICES
+.service_wrapper {
+  width: 33%;
+  display: inline-block;
+  float: left;
+  margin-left: 11%;
+  margin-top: 2rem;
+  -webkit-animation-delay: .8s;
+  -webkit-animation-delay: 1s;
+  .service_title {
+    font-size: 16pt;
+    text-align: center;
+    background-color: #27B899;
+    color: white;
+    width: 12rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    padding: .5rem 0;
+    margin: auto;
+  }
+  .service_description {
+    color: #999;
+    font-size: 12pt;
+    letter-spacing: .08rem;
+  }
+}
+#last_service {
+  margin-bottom: 5rem;
+}
+
+// PORTFOLIO
+.portfolio_example {
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  float: left;
+  margin: 3rem 0 3rem 5rem;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.75);
+  -webkit-animation-delay: .8s;
+  -webkit-animation-duration: 1s;
+  .portfolio_tag {
+    color: white;
+    background: #27B899;
+    padding: 1rem;
+    margin-top: 66%;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    display: none;
+  }
+}
+#secure_inventory {
+  background-image: url(secure_inventory.png);
+}
+#miracle_clean {
+  background-image: url(miracle_clean.png);
+}
+#cindrich_boards{
+  background-image: url(cindrich_boards.png);
+}
+
+.portfolio_example:hover {
+  .portfolio_tag {
+    display: block;
+    -webkit-animation-duration: .5s;
+  }
+}
