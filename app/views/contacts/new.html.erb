@@ -1,0 +1,26 @@
+<%= render :partial => "static_pages/navbar" %>
+
+<div class="green_ribbon animated fadeIn">
+  <div class="text_wrapper_large">
+    <p class="subheading">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+  </div>
+</div>
+
+<div id="contact_form" class="animated fadeIn">
+  <%= form_for @contact do |f| %>
+    <h4><%= f.label :name, "What's your name?", class:'contact_form_title' %></h4>
+    <%= f.text_field :name, required: true, placeholder:'name', autofocus: true %>
+
+    <h4><%= f.label :email, "How can we reach you?", class:'contact_form_title' %></h4>
+    <%= f.email_field :email, required: true, placeholder:'email' %>
+
+    <h4><%= f.label :message, "What can we do for you?", class:'contact_form_title' %></h4>
+    <%= f.text_area :message, required: true, as: :text, placeholder:'message' %>
+    <div class='hidden'> 
+      <%= f.label :nickname %><br>
+      <%= f.text_field :nickname, hint: 'leave this blank' %>
+    </div>
+    <br>
+    <%= f.submit 'send', id:'send_button' %>
+  <% end %>
+</div>
