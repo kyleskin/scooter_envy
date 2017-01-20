@@ -14,6 +14,8 @@
  *= require_self
  */
 
+ $green: #27B899;
+
  body {
    font-family: "niveau-grotesk";
  }
@@ -26,10 +28,10 @@
    font-size: 18pt;
  }
  li:hover {
-   border-bottom: solid #27B899 3px;
+   border-bottom: solid $green 3px;
  }
 .active {
-  border-bottom: solid #27B899 3px;
+  border-bottom: solid $green 3px;
 }
 
 .text_wrapper {

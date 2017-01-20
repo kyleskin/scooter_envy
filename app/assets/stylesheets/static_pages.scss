@@ -1,3 +1,5 @@
+ $green: #27B899;
+
 .header {
   div#homepage_navbar {
     text-decoration: none;
@@ -37,11 +39,21 @@
     -webkit-animation-duration: 2.5s;
   }
 }
-.homepage_text {
+.homepage_headline {
   font-size: 25pt;
-  color: #27B899;
-  margin-top: 4rem;
+  color: $green;
+  margin-top: 2rem;
+  font-weight: normal;
   -webkit-animation-delay: 1s;
+}
+
+.homepage_secondline {
+  color: $green;
+  font-weight: normal;
+  font-size: 20pt;
+  -webkit-animation-delay: 1s;
+  // margin-top: -1rem;
+  line-height: 1.25;
 }
 
 // ABOUT PAGE
@@ -57,7 +69,7 @@
 }
 .green_ribbon {
   width: 100%;
-  background-color: #27B899;
+  background-color: $green;
   color: white;
   padding: .5rem 0;
   line-height: 1.5;
@@ -92,7 +104,7 @@
   }
   input, textarea {
     width: 50%;
-    border: solid #27B899 3px;
+    border: solid $green 3px;
     padding: .5rem;
     margin-bottom: -.5rem;
   }
@@ -106,19 +118,20 @@
     margin-bottom: 3rem;
   }
   #send_button:hover {
-    background: #27B899;
+    background: $green;
     color: white;
+    cursor: pointer;
   }
   input:focus {
-    border: solid #27B899 5px;
+    border: solid $green 5px;
     outline: none;
   }
   textarea:focus {
-    border: solid #27B899 5px;
+    border: solid $green 5px;
     outline: none;
   }
   #send_button:focus {
-    background-color: #27B899;
+    background-color: $green;
     color: white;
   }
 }
@@ -135,7 +148,7 @@
   .service_title {
     font-size: 16pt;
     text-align: center;
-    background-color: #27B899;
+    background-color: $green;
     color: white;
     width: 12rem;
     font-weight: 200;
@@ -166,7 +179,7 @@
   -webkit-animation-duration: 1s;
   .portfolio_tag {
     color: white;
-    background: #27B899;
+    background: $green;
     padding: 1rem;
     margin-top: 66%;
     font-weight: 300;
